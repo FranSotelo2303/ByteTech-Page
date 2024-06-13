@@ -1,0 +1,39 @@
+---
+import MainLayout from '../layouts/main-layout.astro'
+import ContactInfo from '../components/contact-box.tsx'
+import ContactForm from '../components/contact-form.tsx'
+---
+
+
+<MainLayout title = 'Contactanos'>
+
+  <!-- Intro Section -->
+
+	<section id="contact-us" class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[100px]">
+		<h2 class="text-[30px] text-center capitalize font-dm tracking-wide lg:max-w-[60%] leading-8 md:leading-[62.50px] md:text-[50px] mx-auto text-text-darkGray ">No dudes en contactarnos</h2>
+
+    <!-- main section -->
+    <div class="grid grid-cols-1 gap-[55px] pt-20 lg:grid-cols-3 place-content-center">
+      <ContactInfo />
+      <ContactForm />
+    </div>
+	</section>
+
+ 
+
+</MainLayout>
+
+<style>
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+
+</style>

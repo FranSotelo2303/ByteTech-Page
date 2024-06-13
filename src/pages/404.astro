@@ -1,0 +1,41 @@
+---
+import MainLayout from '../layouts/main-layout.astro'
+import QuoteText from '../components/quote'
+import Button from '../components/miniButton.tsx'
+---
+
+<MainLayout title = 'Ups...'>
+
+  <!-- Banner Section -->
+
+  <section class="w-full  h-[20rem] bg-cover bg-slate-500 flex flex-col justify-center items-center p-5">
+    <p class="text-base md:text-[25px] pb-5 font-jost text-primary-400 w-full lg:max-w-[75%] text-center">
+      Parece que te has perdido
+    </p>
+    <p class="text-base md:text-[25px] pb-5 font-jost text-primary-400 w-full lg:max-w-[75%] text-center">
+      Vuelve a la pagina de inicio
+    </p>
+    <a class="ease-in-out duration-300 hover:scale-[1.01] " href="/">
+      <Button text="Inicio"/>
+    </a>
+  </section>
+	</section>
+
+ 
+
+</MainLayout>
+
+<style>
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+
+</style>
